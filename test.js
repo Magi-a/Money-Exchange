@@ -11,7 +11,7 @@ describe('makeExchange function', () => {
     assert.deepEqual(makeExchange(1000), {"H": 20});
     assert.deepEqual(makeExchange(9999), {"H":199,"Q":1,"D":2,"P":4});
   });
-
+  
   it('should return empty object if passed currency in is 0', () => {
     assert.deepEqual(makeExchange(0), {});
   });
